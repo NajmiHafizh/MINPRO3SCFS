@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JKT48</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="showPage('beranda')">JKT48</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('beranda')">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('tentang')">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('anggota')">Anggota</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('events')">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('galeri')">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('kontak')">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="beranda" class="page active">
+        <div class="container">
+            <div class="hero-section">
+                <h1 class="hero-title">Selamat Datang di JKT48</h1>
+                <p class="hero-subtitle">Situs JKT48! Ikuti kabar terbaru, pertunjukan, dan merchandise eksklusif dari idol grup favorit Indonesia.</p>
+                
+                <div class="text-center mb-4">
+                    <img src="jkt48.jpg" alt="JKT48 Group" class="img-fluid rounded-4 shadow-lg" style="max-width: 300px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));">
+                </div>
+                
+                <p class="mb-4">JKT48 adalah sister group resmi AKB48 dari Jepang yang didirikan pada tahun 2011. Grup ini mengusung konsep "Idola yang dapat kamu temui setiap hari" dengan pertunjukan rutin di JKT48 Theater.</p>
+
+                <div class="text-center">
+                    <a href="#" onclick="showPage('events')" class="btn-custom">
+                        <i class="fas fa-calendar-alt me-2"></i>Lihat Jadwal Show
+                    </a>
+                    <a href="#" onclick="showPage('anggota')" class="btn-custom btn-secondary">
+                        <i class="fas fa-users me-2"></i>Lihat Anggota
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card-custom text-center">
+                        <i class="fas fa-theater-masks fa-3x mb-3" style="color: #667eea;"></i>
+                        <h3>Pertunjukan Rutin</h3>
+                        <p>Nikmati pertunjukan live JKT48 setiap minggu di JKT48 Theater dengan berbagai setlist menarik.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom text-center">
+                        <i class="fas fa-music fa-3x mb-3" style="color: #667eea;"></i>
+                        <h3>Single Terbaru</h3>
+                        <p>Dengarkan single-single terbaru JKT48 yang selalu menghadirkan lagu-lagu berkualitas tinggi.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom text-center">
+                        <i class="fas fa-heart fa-3x mb-3" style="color: #667eea;"></i>
+                        <h3>Fan Interaction</h3>
+                        <p>Bertemu langsung dengan member JKT48 melalui berbagai acara meet & greet dan handshake event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tentang" class="page">
+        <div class="container">
+            <div class="hero-section">
+                <h1 class="hero-title">Tentang JKT48</h1>
+                <p class="hero-subtitle">Mengenal lebih dekat idol grup kebanggaan Indonesia</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card-custom">
+                        <h3><i class="fas fa-star me-2"></i>Sejarah JKT48</h3>
+                        <p>JKT48 adalah grup idol asal Indonesia yang merupakan sister group dari AKB48 Jepang. Didirikan pada tahun 2011, JKT48 telah menjadi bagian penting dari industri hiburan Indonesia dengan konsep <span style="background: rgba(255, 235, 59, 0.3); padding: 2px 8px; border-radius: 10px;">"idola yang dapat kamu temui setiap hari"</span>.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-custom">
+                        <h3><i class="fas fa-building me-2"></i>JKT48 Theater</h3>
+                        <p>JKT48 Theater berlokasi di fX Sudirman, Jakarta Pusat, sebagai tempat pertunjukan rutin dan acara khusus. Theater ini menjadi rumah bagi para member untuk berinteraksi dengan cara berfoto dan memberikan tandan tangan kepada fans setiap hari.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card-custom">
+                        <h3><i class="fas fa-music me-2"></i>Konsep Musik</h3>
+                        <p>Grup ini telah merilis berbagai single dan album, termasuk adaptasi dari AKB48 yang disesuaikan dengan budaya Indonesia, menciptakan perpaduan unik antara J-Pop dan nuansa lokal.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-custom">
+                        <h3><i class="fas fa-users me-2"></i>Generasi Member</h3>
+                        <p>JKT48 memiliki banyak generasi member dengan keunikan dan bakat mereka sendiri, dari generasi pertama hingga generasi terbaru yang terus menghadirkan talenta-talenta muda berbakat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn-custom" onclick="toggleFactInfo()">
+                    <i class="fas fa-lightbulb me-2"></i>Fakta Menarik
+                </button>
+                <div id="factInfo" style="display: none; margin-top: 20px;">
+                    <div class="card-custom" style="background: rgba(78, 205, 196, 0.1); border-left: 5px solid #4ecdc4;">
+                        <h4><i class="fas fa-trophy me-2"></i>Tahukah Anda?</h4>
+                        <p>JKT48 adalah grup idol pertama AKB48 yang dibentuk di luar Jepang! Mereka membuka jalan bagi sister group AKB48 lainnya di Asia Tenggara.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="anggota" class="page">
+        <div class="container">
+            <div class="hero-section">
+                <h1 class="hero-title">Anggota JKT48</h1>
+                <p class="hero-subtitle">Kenali para member JKT48 yang berbakat dan penuh semangat</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="member-card text-center">
+                        <img src="christyjkt.jpg" alt="Christy" class="member-image mb-3">
+                        <h4>Christy JKT48</h4>
+                        <p class="text-muted">Generasi 7 • 2018</p>
+                        <p>Angelina Christy adalah member JKT48 yang terkenal dengan pembawaannya yang manis dan elegan serta bakatnya dalam bernyanyi yang mengesankan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="member-card text-center">
+                        <img src="michiejkt.jpg" alt="Michie" class="member-image mb-3">
+                        <h4>Michie JKT48</h4>
+                        <p class="text-muted">Generasi 11 • 2022</p>
+                        <p>Michelle Alexandra atau Michie dikenal sebagai salah satu member yang bertalenta dalam menari dan memiliki kepribadian yang ceria.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="member-card text-center">
+                        <img src="freyajayawardana.jpg" alt="Freya" class="member-image mb-3">
+                        <h4>Freya JKT48</h4>
+                        <p class="text-muted">Generasi 7 • 2018</p>
+                        <p>Freya Jayawardana merupakan salah satu member JKT48 yang populer dengan penampilan dan kemampuan MC-nya yang luar biasa.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="member-card text-center">
+                        <img src="zeejkt.jpg" alt="Zee" class="member-image mb-3">
+                        <h4>Zee JKT48</h4>
+                        <p class="text-muted">Generasi 7 • 2018</p>
+                        <p>Azizi Asadel atau yang akrab disapa Zee adalah salah satu mantan member JKT48 yang terkenal dengan kemampuan vokalnya yang kuat.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="member-card text-center">
+                        <img src="adel.jpg" alt="Adel" class="member-image mb-3">
+                        <h4>Adel JKT48</h4>
+                        <p class="text-muted">Generasi 8 • 2019</p>
+                        <p>Reva Fidela Adel Pantjoro atau Adel dikenal sebagai mantan member dengan kemampuan dance yang energik dan kepribadian yang ramah.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="member-card text-center">
+                        <img src="melody.jpg" alt="Melody" class="member-image mb-3">
+                        <h4>Melody JKT48</h4>
+                        <p class="text-muted">Generasi 1 • 2011</p>
+                        <p>Melody Nurramdhani Laksani adalah mantan member JKT48 yang memiliki bakat menyanyi dan dancing yang luar biasa serta kepribadian yang karismatik.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="events" class="page">
+        <div class="container">
+            <div class="hero-section">
+                <h1 class="hero-title">Events & Pertunjukan</h1>
+                <p class="hero-subtitle">Jangan lewatkan pertunjukan dan acara JKT48 mendatang</p>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="mb-4" style="background: var(--secondary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700;">
+                        <i class="fas fa-calendar-alt me-2"></i>Jadwal Mendatang
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="event-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <div class="event-date">
+                                    <i class="fas fa-calendar me-2"></i>25 Juli 2025
+                                </div>
+                                <p class="mb-0 text-muted"><i class="fas fa-clock me-1"></i>19:00 WIB</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>JKT48 Team KIII "Seifuku no Me"</h4>
+                                <p class="mb-0"><i class="fas fa-map-marker-alt me-1"></i>JKT48 Theater</p>
+                                <span class="badge bg-success">Tersedia</span>
+                            </div>
+                            <div class="col-md-3 text-end">
+                                <button class="btn-custom" onclick="showTicketModal('event1')">
+                                    <i class="fas fa-ticket-alt me-2"></i>Beli Tiket
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="event-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <div class="event-date">
+                                    <i class="fas fa-calendar me-2"></i>27 Juli 2025
+                                </div>
+                                <p class="mb-0 text-muted"><i class="fas fa-clock me-1"></i>15:00 WIB</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Meet & Greet Special Event</h4>
+                                <p class="mb-0"><i class="fas fa-map-marker-alt me-1"></i>JKT48 Theater</p>
+                                <span class="badge bg-danger">Sold Out</span>
+                            </div>
+                            <div class="col-md-3 text-end">
+                                <button class="btn btn-secondary" disabled>
+                                    <i class="fas fa-times me-2"></i>Habis Terjual
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="event-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <div class="event-date">
+                                    <i class="fas fa-calendar me-2"></i>30 Juli 2025
+                                </div>
+                                <p class="mb-0 text-muted"><i class="fas fa-clock me-1"></i>19:30 WIB</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>JKT48 Team J "Fajar Sang Idola"</h4>
+                                <p class="mb-0"><i class="fas fa-map-marker-alt me-1"></i>JKT48 Theater</p>
+                                <span class="badge bg-success">Tersedia</span>
+                            </div>
+                            <div class="col-md-3 text-end">
+                                <button class="btn-custom" onclick="showTicketModal('event2')">
+                                    <i class="fas fa-ticket-alt me-2"></i>Beli Tiket
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="mb-4" style="background: var(--secondary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700;">
+                        <i class="fas fa-star me-2"></i>Jenis Acara
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-custom text-center">
+                        <i class="fas fa-theater-masks fa-3x mb-3" style="color: #ff6b6b;"></i>
+                        <h4>Theater Show</h4>
+                        <p>Pertunjukan dengan berbagai setlist team JKT48. Rasakan pengalaman live performance yang memukau!</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Live Performance</li>
+                            <li><i class="fas fa-check text-success me-2"></i>MC Corner</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Fan Interaction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom text-center">
+                        <i class="fas fa-handshake fa-3x mb-3" style="color: #4ecdc4;"></i>
+                        <h4>Handshake Event</h4>
+                        <p>Kesempatan bertemu dan berjabat tangan langsung dengan member JKT48 favorit Anda!</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Personal Meeting</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Photo Session</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Autograph</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom text-center">
+                        <i class="fas fa-birthday-cake fa-3x mb-3" style="color: #45b7d1;"></i>
+                        <h4>Special Event</h4>
+                        <p>Acara khusus seperti ulang tahun member, perayaan hari besar, dan konser spektakuler.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Birthday Show</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Concert</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Graduation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="mb-4" style="background: var(--secondary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700;">
+                        <i class="fas fa-list me-2"></i>Jadwal Lengkap
+                    </h2>
+                    <div class="table-responsive">
+                        <table class="table table-custom">
+                            <thead>
+                                <tr>
+                                    <th><i class="fas fa-calendar me-2"></i>Tanggal</th>
+                                    <th><i class="fas fa-clock me-2"></i>Waktu</th>
+                                    <th><i class="fas fa-music me-2"></i>Acara</th>
+                                    <th><i class="fas fa-map-marker-alt me-2"></i>Lokasi</th>
+                                    <th><i class="fas fa-info-circle me-2"></i>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold">15 Agustus 2025</td>
+                                    <td>19:00 WIB</td>
+                                    <td>JKT48 Team KIII "Seifuku no Me"</td>
+                                    <td>JKT48 Theater</td>
+                                    <td><span class="badge bg-success">Tersedia</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">17 Agustus 2025</td>
+                                    <td>15:00 WIB</td>
+                                    <td>Meet & Greet Member</td>
+                                    <td>JKT48 Theater</td>
+                                    <td><span class="badge bg-danger">Sold Out</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">30 Agustus 2025</td>
+                                    <td>19:30 WIB</td>
+                                    <td>JKT48 Team J "Fajar Sang Idola"</td>
+                                    <td>JKT48 Theater</td>
+                                    <td><span class="badge bg-success">Tersedia</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">02 September 2025</td>
+                                    <td>18:00 WIB</td>
+                                    <td>Handshake Event</td>
+                                    <td>Mall Central Park</td>
+                                    <td><span class="badge bg-warning">Pre-Sale</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">05 September 2025</td>
+                                    <td>20:00 WIB</td>
+                                    <td>JKT48 Team T "Pajama Drive"</td>
+                                    <td>JKT48 Theater</td>
+                                    <td><span class="badge bg-info">Coming Soon</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="galeri" class="page">
+        <div class="container">
+            <div class="hero-section">
+                <h1 class="hero-title">Galeri Foto</h1>
+                <p class="hero-subtitle">Kumpulan Foto-Foto Terbaik JKT48
+                    <br>Momen Terindah Para Member di Atas dan di Luar Panggung</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="performance.jpg" alt="Performance">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="Behind Scene.jpg" alt="Behind Scene">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="potrait.jpg" alt="Portrait">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="concert.jpg" alt="Concert">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="Fan Meeting.jpg" alt="Fan Meeting">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="thater.jpg" alt="Theater">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="special event.jpg" alt="Special Event">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="graduation.jpg" alt="Graduation">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="birthday.jpg" alt="Birthday">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kontak" class="page">
+        <div class="container">
+            <div class="hero-section">
+                <h1 class="hero-title">Hubungi Kami</h1>
+                <p class="hero-subtitle">Ada pertanyaan atau ingin berkolaborasi dengan JKT48? Jangan ragu untuk menghubungi kami!</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="form-custom">
+                        <h3 class="mb-4"><i class="fas fa-envelope me-2"></i>Kirim Pesan</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="nama" class="form-label">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap Anda" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Alamat Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Masukkan alamat email Anda" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subjek" class="form-label">Subjek</label>
+                                <input type="text" class="form-control" id="subjek" placeholder="Subjek pesan Anda" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesan" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-custom">
+                                <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-custom">
+                        <h4><i class="fas fa-info-circle me-2"></i>Informasi Kontak</h4>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <strong>Email:</strong> info@jkt48.com
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                            <strong>Alamat:</strong> JKT48 Theater, fX Sudirman Lt. 4, Jakarta Pusat 10250
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-phone text-success me-2"></i>
+                            <strong>Telepon:</strong> (021) 123-4567
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-clock text-warning me-2"></i>
+                            <strong>Jam Operasional:</strong> Senin - Jumat, 09:00 - 18:00 WIB
+                        </div>
+                    </div>
+
+                    <div class="card-custom mt-4">
+                        <h4><i class="fas fa-share-alt me-2"></i>Media Sosial</h4>
+                        <div class="text-center">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                        <p class="text-center mt-3">Ikuti media sosial kami untuk mendapatkan update terbaru tentang JKT48!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-star me-2"></i>Tentang JKT48</h5>
+                    <p>JKT48 adalah idol group asal Indonesia yang berafiliasi dengan AKB48 dari Jepang. Dibentuk pada tahun 2011, JKT48 mengusung konsep "Idola yang dapat kamu temui setiap hari".</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-link me-2"></i>Link Penting</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" onclick="showPage('beranda')" class="text-white-50">Beranda</a></li>
+                        <li><a href="#" onclick="showPage('tentang')" class="text-white-50">Tentang Kami</a></li>
+                        <li><a href="#" onclick="showPage('anggota')" class="text-white-50">Anggota</a></li>
+                        <li><a href="#" onclick="showPage('events')" class="text-white-50">Events</a></li>
+                        <li><a href="#" onclick="showPage('galeri')" class="text-white-50">Galeri</a></li>
+                        <li><a href="#" onclick="showPage('kontak')" class="text-white-50">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-users me-2"></i>Ikuti Kami</h5>
+                    <div class="mb-3">
+                        <a href="#" class="social-link me-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link me-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link me-2">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p>Ikuti media sosial kami untuk mendapatkan update terbaru tentang JKT48!</p>
+                </div>
+            </div>
+            <hr class="bg-white opacity-25">
+            <div class="text-center">
+                <p>&copy; 2025 JKT48. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="ticketModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="border-radius: 20px; border: none;">
+                <div class="modal-header" style="background: var(--secondary-gradient); color: white; border-radius: 20px 20px 0 0;">
+                    <h5 class="modal-title"><i class="fas fa-ticket-alt me-2"></i>Pembelian Tiket</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="ticketContent">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn-custom" onclick="processTicket()">
+                            <i class="fas fa-credit-card me-2"></i>Proses Pembayaran
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Page Navigation
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update navbar active state
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Close mobile menu if open
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                bootstrap.Collapse.getInstance(navbarCollapse).hide();
+            }
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Toggle fact info
+        function toggleFactInfo() {
+            const factInfo = document.getElementById('factInfo');
+            const button = event.target;
+            
+            if (factInfo.style.display === 'none' || factInfo.style.display === '') {
+                factInfo.style.display = 'block';
+                factInfo.style.animation = 'slideInFromBottom 0.5s ease-out';
+                button.innerHTML = '<i class="fas fa-lightbulb me-2"></i>Sembunyikan';
+                button.style.background = 'linear-gradient(45deg, #f093fb 0%, #f5576c 100%)';
+            } else {
+                factInfo.style.display = 'none';
+                button.innerHTML = '<i class="fas fa-lightbulb me-2"></i>Fakta Menarik';
+                button.style.background = 'var(--secondary-gradient)';
+            }
+        }
+
+        // Show ticket modal
+        function showTicketModal(eventId) {
+            const ticketContent = document.getElementById('ticketContent');
+            let content = '';
+            
+            if (eventId === 'event1') {
+                content = `
+                    <h4>JKT48 Team KIII "Seifuku no Me"</h4>
+                    <p><strong>Tanggal:</strong> 25 Juli 2025</p>
+                    <p><strong>Waktu:</strong> 19:00 WIB</p>
+                    <p><strong>Lokasi:</strong> JKT48 Theater</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card p-3 mb-3" style="border: 2px solid #667eea; border-radius: 15px;">
+                                <h6>VIP Seat</h6>
+                                <p class="mb-1">Rp 150,000</p>
+                                <small class="text-muted">Termasuk hi-touch</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-3 mb-3" style="border: 2px solid #4ecdc4; border-radius: 15px;">
+                                <h6>Regular Seat</h6>
+                                <p class="mb-1">Rp 75,000</p>
+                                <small class="text-muted">Standing area</small>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else if (eventId === 'event2') {
+                content = `
+                    <h4>JKT48 Team J "Fajar Sang Idola"</h4>
+                    <p><strong>Tanggal:</strong> 30 Juli 2025</p>
+                    <p><strong>Waktu:</strong> 19:30 WIB</p>
+                    <p><strong>Lokasi:</strong> JKT48 Theater</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card p-3 mb-3" style="border: 2px solid #667eea; border-radius: 15px;">
+                                <h6>Premium Seat</h6>
+                                <p class="mb-1">Rp 200,000</p>
+                                <small class="text-muted">Front row + merchandise</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-3 mb-3" style="border: 2px solid #4ecdc4; border-radius: 15px;">
+                                <h6>Standard Seat</h6>
+                                <p class="mb-1">Rp 100,000</p>
+                                <small class="text-muted">Regular seating</small>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            ticketContent.innerHTML = content;
+            new bootstrap.Modal(document.getElementById('ticketModal')).show();
+        }
+
+        // Process ticket purchase
+        function processTicket() {
+            const button = event.target;
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = '<span class="loading-spinner me-2"></span>Memproses...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                alert('Pembelian tiket berhasil! Silakan cek email Anda untuk detail pembayaran.');
+                button.innerHTML = originalText;
+                button.disabled = false;
+                bootstrap.Modal.getInstance(document.getElementById('ticketModal')).hide();
+            }, 2000);
+        }
+
+        // Add animation on scroll
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.card-custom, .member-card, .event-card');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const cardVisible = 150;
+                
+                if (cardTop < window.innerHeight - cardVisible) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add initial state for scroll animations
+            const cards = document.querySelectorAll('.card-custom, .member-card, .event-card')
+            ;
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                card.style.transition = 'all 0.6s ease-out';
+            });
+            
+            // Trigger scroll event to show visible cards
+            window.dispatchEvent(new Event('scroll'));
+        });
+
+        // Form submission with animation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const button = this.querySelector('button[type="submit"]');
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = '<span class="loading-spinner me-2"></span>Mengirim...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                alert('Pesan berhasil dikirim! Terima kasih atas pesan Anda.');
+                button.innerHTML = originalText;
+                button.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
